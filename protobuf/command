@@ -1,0 +1,7 @@
+chmod +x protoc-gen-grpc-java-1.3.0-linux-x86_64.exe 
+sudo ./protoc-3.3.0-linux-x86_64/bin/protoc \
+--plugin=protoc-gen-grpc-java=./protoc-gen-grpc-java-1.3.0-linux-x86_64.exe \
+--grpc-java_out=./helloworld \
+--java_out=./helloworld \
+--proto_path=. \
+./helloworld.proto
